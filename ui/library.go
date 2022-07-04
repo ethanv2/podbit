@@ -7,7 +7,7 @@ import (
 	"github.com/ethanv2/podbit/sound"
 	"github.com/ethanv2/podbit/ui/components"
 
-	"github.com/rthornton128/goncurses"
+	"github.com/vit1251/go-ncursesw"
 )
 
 // Library represents the list menu type and state.

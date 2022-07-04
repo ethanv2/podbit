@@ -27,7 +27,7 @@ import (
 	"os/signal"
 	"syscall"
 
-	"github.com/rthornton128/goncurses"
+	"github.com/vit1251/go-ncursesw"
 	"golang.org/x/term"
 )
 

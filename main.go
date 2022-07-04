@@ -12,7 +12,7 @@ import (
 	"github.com/ethanv2/podbit/ui"
 
 	"github.com/juju/fslock"
-	"github.com/rthornton128/goncurses"
+	"github.com/vit1251/go-ncursesw"
 )
 
 const (

@@ -7,7 +7,7 @@ import (
 	"github.com/ethanv2/podbit/data"
 	"github.com/ethanv2/podbit/sound"
 
-	"github.com/rthornton128/goncurses"
+	"github.com/vit1251/go-ncursesw"
 )
 
 // Player is the full screen player component.
@@ -26,13 +26,10 @@ func (l *Player) Render(x, y int) {
 	pos, dur := sound.Plr.GetTimings()
 	percent := pos / dur
 	p, d := data.FormatTime(pos), data.FormatTime(dur)
+	ep, pod := data.LimitString(sound.Plr.NowPlaying, w-1), data.LimitString(sound.Plr.NowPodcast, w-1)
 
-	maxwt := int(math.Min(float64(w-1), float64(len(sound.Plr.NowPlaying))))
-	maxwp := int(math.Min(float64(w-1), float64(len(sound.Plr.NowPodcast))))
-	ep, pod := sound.Plr.NowPlaying[:maxwt], sound.Plr.NowPodcast[:maxwp]
-
-	minxt := int(math.Max(0, float64((w-maxwt)/2)))
-	minxp := int(math.Max(0, float64((w-maxwp)/2)))
+	minxt := int(math.Max(0, float64((w-len([]rune(ep)))/2)))
+	minxp := int(math.Max(0, float64((w-len([]rune(pod)))/2)))
 
 	var stat, div string
 	if sound.Plr.IsPlaying() {
@@ -86,9 +83,7 @@ func (l *Player) Render(x, y int) {
 		} else {
 			txt = cur.URL
 		}
-
-		max := int(math.Min(float64(w-1), float64(len(txt))))
-		clipped := txt[:max]
+		clipped := data.LimitString(txt, w-1)
 
 		root.ColorOn(colors.ColorRed)
 		root.MovePrint(h-(h/3)+2, (w-len(lbl))/2, lbl)

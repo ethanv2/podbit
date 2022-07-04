@@ -22,7 +22,7 @@ Podbit runs on Linux and the BSDs.
 
 Podbit is written in Go. So, to build, you will need a copy of the Go command line tool. In addition, you will need:
 
-* *ncurses* development libraries and headers
+* *ncurses* development libraries and headers, including wide character support (*libncusesw*)
 * A normal install of ``mpv``
 * A copy of GNU Make
 * Newsboat to enqueue podcasts - *(optional)*

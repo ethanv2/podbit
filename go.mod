@@ -6,7 +6,7 @@ require (
 	github.com/blang/mpv v0.0.0-20160810175505-d56d7352e068
 	github.com/dhowden/tag v0.0.0-20201120070457-d52dcb253c63
 	github.com/juju/fslock v0.0.0-20160525022230-4d5c94c67b4b
-	github.com/rthornton128/goncurses v0.0.0-20210908011339-931b33a34c71
+	github.com/vit1251/go-ncursesw v0.0.0-20211216195139-e61a3c4242a5
 	golang.org/x/term v0.0.0-20201126162022-7de9c90e9dd1
 )
 

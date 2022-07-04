@@ -13,6 +13,9 @@
 // valid UTF-8.
 //
 // Data sourced from http://homoglyphs.net/
+//
+// Deprecated: This library is not for use. You should really just support
+// UTF-8 instead.
 package escape
 
 // Convertibles are runes which should be converted from the map key to the map

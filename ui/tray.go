@@ -9,7 +9,7 @@ import (
 	"github.com/ethanv2/podbit/data"
 	"github.com/ethanv2/podbit/sound"
 
-	"github.com/rthornton128/goncurses"
+	"github.com/vit1251/go-ncursesw"
 )
 
 const (

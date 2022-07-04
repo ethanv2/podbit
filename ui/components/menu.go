@@ -2,7 +2,7 @@ package components
 
 import (
 	"github.com/ethanv2/podbit/colors"
-	"github.com/rthornton128/goncurses"
+	"github.com/vit1251/go-ncursesw"
 )
 
 // Menu represents a vertical panel menu of cellular entries
@@ -48,14 +48,13 @@ func (m *Menu) Render() {
 			break
 		}
 
-		var capped string
-		capped = elem
-		if len(capped) > m.W {
-			capped = capped[len(capped)-m.W:]
+		capped, decode := elem, []rune(elem)
+		if len(decode) > m.W {
+			capped = string(decode[len(decode)-m.W:])
 			capped = "<" + capped
 		} else {
 			// Pad out to fill row
-			for i := len(capped); i <= m.W; i++ {
+			for i := len(decode); i <= m.W; i++ {
 				capped += " "
 			}
 		}

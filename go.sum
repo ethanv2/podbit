@@ -9,8 +9,8 @@ github.com/kr/pretty v0.2.1/go.mod h1:ipq/a2n7PKx3OHsz4KJII5eveXtPO4qwEXGdVfWzfn
 github.com/kr/pty v1.1.1/go.mod h1:pFQYn66WHrOpPYNljwOMqo10TkYh1fy3cYio2l3bCsQ=
 github.com/kr/text v0.1.0 h1:45sCR5RtlFHMR4UwH9sdQ5TC8v0qDQCHnXt+kaKSTVE=
 github.com/kr/text v0.1.0/go.mod h1:4Jbv+DJW3UT/LiOwJeYQe1efqtUx/iVham/4vfdArNI=
-github.com/rthornton128/goncurses v0.0.0-20210908011339-931b33a34c71 h1:1lA/ljJAwqsNo7HHUG7M4XY9dkp6aYnnW5Tglh7bEgA=
-github.com/rthornton128/goncurses v0.0.0-20210908011339-931b33a34c71/go.mod h1:AHlKFomPTwmO7H2vL8d7VNrQNQmhMi/DBhDnHRhjbCo=
+github.com/vit1251/go-ncursesw v0.0.0-20211216195139-e61a3c4242a5 h1:38QNnaytR3Mhq0YO05IBNMImfFYQB2Tk5Ct/V1MWOwI=
+github.com/vit1251/go-ncursesw v0.0.0-20211216195139-e61a3c4242a5/go.mod h1:gTXTX4x80o63QC2qsY+NdlLgj+eiWKMwsY2YMZe6e44=
 golang.org/x/sys v0.0.0-20201119102817-f84b799fce68/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
 golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1 h1:SrN+KX8Art/Sf4HNj6Zcz06G7VEz+7w9tdXTPOZ7+l4=
 golang.org/x/sys v0.0.0-20210615035016-665e8c7367d1/go.mod h1:oPkhp1MJrh7nUepCBck5+mAzfO9JrbApNNgaTdGDITg=

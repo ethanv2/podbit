@@ -120,6 +120,21 @@ func IsURL(check string) bool {
 	return err == nil && u.Scheme != "" && u.Host != ""
 }
 
+// LimitString limits a UTF-8 string to max visible runes, showing the full
+// string if it is shorter than max. If max is negative or zero, an empty
+// string is returned.
+func LimitString(in string, max int) string {
+	r := []rune(in)
+	if max <= 0 {
+		return ""
+	}
+	if max > len(r) {
+		return in
+	}
+
+	return string(r[:max])
+}
+
 // FormatTime formats a time measured in seconds.
 func FormatTime(seconds float64) string {
 	round := int(seconds)
